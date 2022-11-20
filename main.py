@@ -28,7 +28,7 @@ class Example(QMainWindow):
         self.draw = False
 
     def draw_flag(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(random.randrange(255), random.randrange(255), random.randrange(255)))
         x, y = random.randrange(400), random.randrange(200)
         qp.drawEllipse(x, y, random.randrange(400 - x), random.randrange(200 - y))
 
